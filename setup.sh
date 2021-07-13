@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 setup_file=~/.okta-aws
 aws_config=~/.aws/config
 # pip3 install okta-awscli
