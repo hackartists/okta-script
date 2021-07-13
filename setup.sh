@@ -4,7 +4,11 @@ aws_config=~/.aws/config
 # pip3 install okta-awscli
 user=$USER
 
-mv ~/.aws ~/.aws-backup
+if [ -d ~/.aws ]
+then
+    mv ~/.aws ~/.aws-backup
+fi
+
 rm -rf $setup_file
 touch $setup_file
 cat <<EOT >> $setup_file
@@ -30,6 +34,7 @@ base-url = groundx.okta.com
 duration = 43200
 EOT
 
+mkdir -p ~/.aws
 touch $aws_config
 cat <<EOT >> $aws_config
 [default]
