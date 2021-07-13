@@ -2,8 +2,9 @@
 setup_file=~/.okta-aws
 aws_config=~/.aws/config
 # pip3 install okta-awscli
-user=$1
+user=$USER
 
+mv ~/.aws ~/.aws-backup
 rm -rf $setup_file
 touch $setup_file
 cat <<EOT >> $setup_file
