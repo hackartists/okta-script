@@ -2,7 +2,7 @@
 PROFILE=default
 
 echo "Setting up Okta ($PROFILE)..."
-okta-awscli --okta-profile default --profile default
+okta-awscli --okta-profile $PROFILE --profile $PROFILE
 echo "Testing AWS CLI ($PROFILE)"
-aws sts get-caller-identity
+aws sts --profile $PROFILE get-caller-identity
 
