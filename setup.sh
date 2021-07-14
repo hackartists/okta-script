@@ -17,21 +17,21 @@ username = $user@groundx.xyz
 factor = OKTA
 app-link = https://groundx.okta.com/home/amazon_aws/0oa3b7q2dEHRFlkab5d6/272
 base-url = groundx.okta.com
-duration = 43200
+duration = 604800
 
 [service-dev]
 username = $user@groundx.xyz
 factor = OKTA
 app-link = https://groundx.okta.com/home/amazon_aws/0oa3b7q2dEHRFlkab5d6/272
 base-url = groundx.okta.com
-duration = 43200
+duration = 604800
 
 [service-prod]
 username = $user@groundx.xyz
 factor = OKTA
 app-link = https://groundx.okta.com/home/amazon_aws/0oa10gs49r83z98Hy5d7/272
 base-url = groundx.okta.com
-duration = 43200
+duration = 604800
 EOT
 
 mkdir -p ~/.aws
