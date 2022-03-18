@@ -42,7 +42,7 @@ aws --profile default eks update-kubeconfig --name service-qa --region ap-northe
 # aws --profile default eks update-kubeconfig --name service-qa-common --region ap-northeast-2
 
 echo "Updating kubernetes config for PERF"
-aws --profile default eks update-kubeconfig --name service-qa-perf --region ap-northeast-2
+aws --profile default eks update-kubeconfig --name service-perf --region ap-northeast-2
 
 # echo "Updating kubernetes config for PROD"
 # aws --profile service-prod eks update-kubeconfig --name service-prod-common --region ap-northeast-2
